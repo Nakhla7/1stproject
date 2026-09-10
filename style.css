@@ -1,0 +1,748 @@
+/* ========================================
+   GENERAL SETTINGS
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container,
+.nav-container {
+    width: 85%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   NAVIGATION BAR
+======================================== */
+
+.navbar {
+    height: 68px;
+    background: #0d3b2e;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Logo */
+
+.logo {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+/* Navigation links */
+
+.nav-container nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-container nav a {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.nav-container nav a:hover {
+    color: #f7b733;
+}
+
+
+/* ========================================
+   SECTION SETTINGS
+======================================== */
+
+section {
+    scroll-margin-top: 68px;
+}
+
+.section-light {
+    background: #f7f6f8;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    line-height: 1.2;
+    color: #2d3033;
+    margin-bottom: 20px;
+}
+
+.section-heading p {
+    font-size: 14px;
+    color: #444444;
+}
+
+
+/* ========================================
+   HERO SECTION
+======================================== */
+
+.hero {
+    min-height: 500px;
+
+    background-image: url(images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Dark overlay over image */
+
+.hero-overlay {
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.52);
+}
+
+
+/* Hero text */
+
+.hero-content {
+    color: #ffffff;
+    padding: 30px 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 17px;
+    margin-bottom: 28px;
+}
+
+
+/* Yellow buttons */
+
+.btn {
+    display: inline-block;
+
+    background: #f7b733;
+    color: #222222;
+
+    padding: 12px 27px;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #ffca4d;
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   WHY TRAVEL WITH US
+======================================== */
+
+.why-us {
+    padding: 85px 0 90px;
+}
+
+
+/* Four cards */
+
+.features {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+/* Individual card */
+
+.feature-card {
+    background: #ffffff;
+
+    min-height: 207px;
+
+    padding: 35px 25px 25px;
+
+    text-align: center;
+
+    border-radius: 6px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+
+    transition: 0.3s ease;
+}
+
+
+/* Card hover */
+
+.feature-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Icons */
+
+.feature-icon {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+
+/* Card title */
+
+.feature-card h3 {
+    color: #173d33;
+
+    font-size: 16px;
+
+    margin-bottom: 12px;
+}
+
+
+/* Card text */
+
+.feature-card p {
+    font-size: 14px;
+    color: #444444;
+}
+
+
+/* ========================================
+   DESTINATIONS SECTION
+======================================== */
+
+.destinations {
+    background: #ffffff;
+
+    padding: 80px 0 70px;
+}
+
+
+/* Destination grid */
+
+.destination-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    align-items: start;
+}
+
+
+/* Destination card */
+
+.destination-card {
+    background: #ffffff;
+
+    overflow: hidden;
+
+    border-radius: 6px;
+
+    box-shadow: 0 4px 13px rgba(0, 0, 0, 0.10);
+
+    transition: 0.3s ease;
+}
+
+
+/* Hover effect */
+
+.destination-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Destination image */
+
+.destination-card img {
+    width: 100%;
+
+    height: 184px;
+
+    object-fit: cover;
+}
+
+
+/* Card content */
+
+.card-content {
+    padding: 22px 19px 20px;
+}
+
+
+/* Destination title */
+
+.card-content h3 {
+    color: #173d33;
+
+    font-size: 20px;
+
+    margin-bottom: 10px;
+}
+
+
+/* Destination description */
+
+.card-content p {
+    color: #666666;
+
+    font-size: 14px;
+
+    min-height: 52px;
+
+    margin-bottom: 12px;
+}
+
+
+/* Explore link */
+
+.card-content a {
+    color: #173d33;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+.card-content a:hover {
+    color: #f0a900;
+}
+
+
+/* ========================================
+   EXPERIENCE KENYA
+======================================== */
+
+.experience {
+    padding: 70px 0;
+
+    background: #ffffff;
+}
+
+
+/* Two-column layout */
+
+.experience-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 42px;
+
+    align-items: center;
+}
+
+
+/* Experience image */
+
+.experience-grid img {
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 6px;
+}
+
+
+/* Experience heading */
+
+.experience-text h2 {
+    font-size: 32px;
+
+    line-height: 1.2;
+
+    color: #2d3033;
+
+    margin-bottom: 22px;
+}
+
+
+/* Experience paragraphs */
+
+.experience-text p {
+    color: #555555;
+
+    font-size: 14px;
+
+    margin-bottom: 18px;
+}
+
+
+/* ========================================
+   BOOKING SECTION
+======================================== */
+
+.booking {
+    padding: 72px 0 68px;
+}
+
+
+/* Booking form */
+
+.booking-form {
+    width: 56%;
+
+    max-width: 550px;
+
+    margin: 0 auto;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    border-radius: 7px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Each form field */
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+
+/* Labels */
+
+.form-group label {
+    display: block;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    margin-bottom: 6px;
+}
+
+
+/* Inputs */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    border: 1px solid #d4d4d4;
+
+    border-radius: 4px;
+
+    padding: 11px 12px;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    color: #222222;
+
+    background: #ffffff;
+
+    outline: none;
+}
+
+
+/* Input focus */
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #0d3b2e;
+}
+
+
+/* Message box */
+
+.form-group textarea {
+    height: 110px;
+
+    resize: vertical;
+}
+
+
+/* Book button */
+
+.book-btn {
+    width: 100%;
+
+    border: none;
+
+    border-radius: 4px;
+
+    padding: 12px;
+
+    background: #0d3b2e;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.book-btn:hover {
+    background: #145441;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer {
+    background: #0d3b2e;
+
+    color: #ffffff;
+}
+
+
+/* Footer columns */
+
+.footer-grid {
+    min-height: 225px;
+
+    padding: 43px 0 35px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 60px;
+}
+
+
+/* Footer headings */
+
+.footer h3 {
+    font-size: 18px;
+
+    margin-bottom: 14px;
+}
+
+
+/* Footer text and links */
+
+.footer p,
+.footer a {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    margin-bottom: 7px;
+}
+
+
+/* Footer link hover */
+
+.footer a:hover {
+    color: #f7b733;
+}
+
+
+/* Copyright */
+
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+
+    text-align: center;
+
+    padding: 17px 15px;
+
+    font-size: 13px;
+}
+
+
+/* ========================================
+   TABLET RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 900px) {
+
+    /* Why-us cards become 2 columns */
+
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* Destination cards become 2 columns */
+
+    .destination-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* Experience becomes one column */
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Bigger booking form */
+
+    .booking-form {
+        width: 80%;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 600px) {
+
+    /* Navigation */
+
+    .navbar {
+        height: auto;
+    }
+
+    .nav-container {
+        padding: 15px 0;
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+    /* Navigation links */
+
+    .nav-container nav {
+        gap: 14px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    /* Hero */
+
+    .hero,
+    .hero-overlay {
+        min-height: 470px;
+    }
+
+
+    /* Hero heading */
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+
+    /* Hero paragraph */
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+
+    /* Cards become one column */
+
+    .features,
+    .destination-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Container */
+
+    .container,
+    .nav-container {
+        width: 90%;
+    }
+
+
+    /* Booking form */
+
+    .booking-form {
+        width: 100%;
+
+        padding: 22px;
+    }
+
+
+    /* Footer */
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+}
